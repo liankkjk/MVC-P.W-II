@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Register</title>
+</head>
+<body>
+    <!-- Formulario com nome completo, email, telefone, senha e confirme sua senha -->
+
+    <header>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/?pagina=inicio">Home</a>
+            </li>
+            <li>Usuários
+                <ul>
+                    <li>
+                        <a href="/?pagina=login">Logar-se</a>
+                    </li>                    
+                    <li>
+                        <a href="/?pagina=registrar">Registrar-se</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    
+    <main>
+        <form action="?pagina=usuario&acao=registrar" method="post">
+            <h3>Registrar-se</h3>
+            <input type="text" name="name" placeholder="Nome Completo" />
+            <input type="email" name="email" placeholder="Email" />
+            <input type="text" name="phone" placeholder="Telefone" />
+            <input type="password" name="password" placeholder="Senha" />
+            <input type="password" name="password_confirmation" placeholder="Confirme a senha" />
+            <button type="submit">Registrar-se</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>

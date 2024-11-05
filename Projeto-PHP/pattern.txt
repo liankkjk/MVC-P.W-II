@@ -1,0 +1,10 @@
+Padrão do projeto, sempre escreveremos os recursos com os seguintes formatos
+
+Ex: minha variavel
+
+1. Recurso de rotas ($_GET) em PT kebab-case: minha-variavel
+2. Pastas e Arquivos em EN PascalCase: MyVariable  //usado em src
+3. Variaveis e funções em EN camelCase: myVariable
+4. Banco de Dados em PT snake_case: minha_variavel
+
+os recursos: pagina, acao, id

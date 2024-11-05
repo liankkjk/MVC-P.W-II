@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Formulario com login e senha -->
+     <header>
+        <img src="" alt="" title="">
+     </header>
+
+    <nav>
+        <ul>
+            <li>
+                <a href="/?pagina=inicio">Home</a>
+            </li>
+            <li>Usuários
+                <ul>
+                    <li>
+                        <a href="/?pagina=entrar">Logar-se</a>
+                    </li>
+                    <li>
+                        <a href="/?pagina=registrar">Registrar-se</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <form action="?pagina=usuario&acao=entrar" method="post">
+            <h3>Entrar</h3>
+            <input type="text" name="email" placeholder="Usuário" />
+            <input type="password" name="password" placeholder="Senha" />
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
