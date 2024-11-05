@@ -3,6 +3,11 @@
     $page = $_GET['pagina'] ?? null;
 
     switch($page){
+        case 'pedidos':
+            require 'src/Controllers/PedidosController.php';
+            $controller = new PedidosController();
+            break;
+
         case 'admin':
             require 'src/Controllers/AdminController.php';
             $controller = new AdminController();

@@ -37,7 +37,7 @@ class StaticController {
 
 
     public function admin(){
-        require 'src/Views/Static/Admin/Dashboar.html';
+        require 'src/Views/Static/Admin/AdminView.php';
     }
 }
 

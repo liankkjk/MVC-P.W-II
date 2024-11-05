@@ -1,5 +1,7 @@
 <?php
 
+   require 'src/Views/Admin/AdminView.php';
+
     class AdminController {
         
         public function main(){
@@ -7,6 +9,10 @@
             $action = $_GET['acao'] ?? null;  //?? (ou)
 
             switch($action){
+                case "usuarios":
+                    $this->users();
+                    break;
+
                 default:
                     $this->dashboard();
                     break;
@@ -14,7 +20,10 @@
         }
 
         private function dashboard(){
-            require "src/Views/Admin/Dashboard.html";
+            view("Dashboard");
+        }
+        private function users(){
+            view("Users");
         }
     }
 ?>
